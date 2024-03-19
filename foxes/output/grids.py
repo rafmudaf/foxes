@@ -118,7 +118,7 @@ def get_grid_xy(
     x_pos, x_res = np.linspace(
         x_min,
         x_max,
-        num=int((x_max - x_min) / resolution) + 1,
+        num=int(resolution[0]),
         endpoint=True,
         retstep=True,
         dtype=None,
@@ -126,7 +126,7 @@ def get_grid_xy(
     y_pos, y_res = np.linspace(
         y_min,
         y_max,
-        num=int((y_max - y_min) / resolution) + 1,
+        num=int(resolution[1]),
         endpoint=True,
         retstep=True,
         dtype=None,
@@ -239,7 +239,7 @@ def get_grid_xz(
     x_pos, x_res = np.linspace(
         x_min,
         x_max,
-        num=int((x_max - x_min) / resolution) + 1,
+        num=int(resolution[0]),
         endpoint=True,
         retstep=True,
         dtype=None,
@@ -247,7 +247,7 @@ def get_grid_xz(
     z_pos, z_res = np.linspace(
         z_min,
         z_max,
-        num=int((z_max - z_min) / resolution) + 1,
+        num=int(resolution[0]),
         endpoint=True,
         retstep=True,
         dtype=None,
@@ -360,7 +360,7 @@ def get_grid_yz(
     y_pos, y_res = np.linspace(
         y_min,
         y_max,
-        num=int((y_max - y_min) / resolution) + 1,
+        num=int(resolution[0]),
         endpoint=True,
         retstep=True,
         dtype=None,
@@ -368,7 +368,7 @@ def get_grid_yz(
     z_pos, z_res = np.linspace(
         z_min,
         z_max,
-        num=int((z_max - z_min) / resolution) + 1,
+        num=int(resolution[0]),
         endpoint=True,
         retstep=True,
         dtype=None,
